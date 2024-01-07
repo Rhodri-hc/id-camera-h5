@@ -1,0 +1,73 @@
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  box-sizing: border-box;
+  color: #543418;
+  font-size: 14px;
+  &_logo {
+    margin-top: 150px;
+    transform: rotate(20deg);
+  }
+  &_block {
+    width: 100px;
+    height: 14px;
+    background-color: #fd5f00;
+    opacity: 0.15;
+    display: block;
+    transform: skewX(60deg);
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+  &_typing {
+    font-size: 26px;
+    width: max-content;
+    height: 1.5em;
+    border-right: 1px solid transparent;
+    animation: typing 2s steps(42, end), blink-caret 0.75s step-end infinite;
+    word-break: break-all;
+    overflow: hidden;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 50px;
+  }
+  /* 打印效果 */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 200px;
+    }
+  }
+
+  /* 光标 */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      //border-color: currentColor;
+    }
+  }
+  &_btn {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(160deg, #ff9737 0%, #fe7122 100%);
+    color: white;
+    font-size: 20px;
+    border-radius: 36px;
+    letter-spacing: 2px;
+  }
+}

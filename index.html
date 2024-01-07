@@ -1,0 +1,51 @@
+<!--
+ * @Description: Do not edit
+ * @Autor: New
+ * @Date: 2023-04-11 16:58:08
+ * @LastEditTime: 2023-04-11 20:24:33
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, minimum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=yes" />
+
+    <title></title>
+
+    <script>
+      (function initRem(doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            // 默认设计图为 375 的情况下 1rem=100px 根据自己需求修改
+            var designWidth = 375;
+            docEl.style.fontSize = 100 * (clientWidth / designWidth) + 'px';
+          };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+    </script>
+<!--    <script-->
+<!--      defer="defer"-->
+<!--      src="https://staticfile.yaowutech.cn/react/umd/react.production.min.js"-->
+<!--    ></script>-->
+<!--    <script-->
+<!--      defer="defer"-->
+<!--      src="https://staticfile.yaowutech.cn/react/umd/react-dom.production.min.js"-->
+<!--    ></script>-->
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>

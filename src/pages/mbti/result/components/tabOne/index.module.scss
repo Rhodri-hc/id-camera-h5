@@ -1,0 +1,58 @@
+.tabOne {
+  color: rgba(19, 20, 21, 0.7);
+  &_base {
+    margin-top: 8px;
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    align-items: center;
+    &_color {
+      color: #131415;
+      font-weight: 600;
+    }
+  }
+  &_card {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f5f5f5;
+    position: relative;
+    color: #131415;
+
+    &_title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      position: absolute;
+      z-index: 33;
+      left: 50%;
+      top: 8px;
+      transform: translateX(-50%);
+    }
+    &_progress {
+      margin-top: 12px;
+      width: 100%;
+      background-color: #e8e8e8;
+      height: 4px;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+    }
+    &_typeDesc {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6px;
+    }
+    &_img {
+      width: 128px;
+      flex-shrink: 0;
+      height: 96px;
+    }
+    &_conclusion {
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(19, 20, 21, 0.7);
+      text-align: left;
+    }
+  }
+}

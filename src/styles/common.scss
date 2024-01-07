@@ -1,0 +1,167 @@
+@import 'theme.scss';
+@import 'animation.scss';
+@import 'varible.scss';
+.line-length-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line-length-2 {
+  -webkit-line-clamp: 2;
+}
+.line-length-3 {
+  -webkit-line-clamp: 3;
+}
+.line-length-4 {
+  -webkit-line-clamp: 4;
+}
+.line-length-5 {
+  -webkit-line-clamp: 5;
+}
+.line-length-2,
+.line-length-3,
+.line-length-4,
+.line-length-5 {
+  display: -webkit-box; // 弹性伸缩盒
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical; // 设置伸缩盒子元素排列方式
+}
+
+@for $i from 0 through 80 {
+  @if $i<36 {
+    .font-#{$i} {
+      font-size: $i + px;
+      line-height: ($i * 1.5) + px;
+    }
+  }
+  .border-radius-#{$i} {
+    border-radius: $i + px;
+  }
+  .gap-#{$i} {
+    gap: $i + px;
+  }
+  .m-#{$i} {
+    margin: $i + px;
+  }
+  .p-#{$i} {
+    padding: $i + px;
+  }
+
+  .mx-#{$i} {
+    margin-right: $i + px;
+    margin-left: $i + px;
+  }
+  .my-#{$i} {
+    margin-top: $i + px;
+    margin-bottom: $i + px;
+  }
+  .px-#{$i} {
+    padding-right: $i + px;
+    padding-left: $i + px;
+  }
+  .py-#{$i} {
+    padding-top: $i + px;
+    padding-bottom: $i + px;
+  }
+  @each $short, $long in l left, t top, r right, b bottom {
+    .m#{$short}-#{$i} {
+      margin-#{$long}: $i + px;
+    }
+
+    .p#{$short}-#{$i} {
+      padding-#{$long}: $i + px;
+    }
+  }
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.flex-one {
+  flex: 1;
+}
+.row {
+  @extend .flex;
+
+  flex-direction: row;
+}
+.column {
+  @extend .flex;
+
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  @extend .flex;
+
+  flex-direction: column;
+}
+.flex-align-center {
+  @extend .flex;
+
+  align-items: center;
+}
+.flex-justify-center {
+  @extend .flex;
+
+  justify-content: center;
+}
+.flex-justify-start {
+  @extend .flex;
+
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  @extend .flex;
+
+  justify-content: flex-end;
+}
+.flex-center {
+  @extend .flex-align-center;
+
+  justify-content: center;
+}
+.flex-justify-between {
+  @extend .flex-align-center;
+
+  justify-content: space-between;
+}
+.flex-justify-around {
+  @extend .flex-align-center;
+
+  justify-content: space-around;
+}
+.flex-shrink-zero {
+  flex-shrink: 0;
+}
+.font-normal {
+  font-weight: normal;
+}
+.font-bold {
+  font-weight: bold;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.lh_one_point_five {
+  line-height: 1.5;
+}
+.lh_tow {
+  line-height: 2;
+}
+.text-underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+.tabTow {
+  color: #131415;
+  &_desc {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 22px;
+    > h2:first-child {
+      display: none;
+    }
+    > p {
+      color: rgba(0, 0, 0, 0.6);
+      line-height: 22px;
+      > strong {
+        color: #131415;
+        display: inline-block;
+        margin-top: 16px;
+      }
+    }
+  }
+}

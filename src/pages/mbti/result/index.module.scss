@@ -1,0 +1,115 @@
+$first-bg: #e5fff2;
+$first-color: #23a46d;
+$second-bg: #f9f2ff;
+$second-color: #663399;
+$third-bg: #e1f2ff;
+$third-color: #36a9ff;
+$fourth-bg: #fff4e9;
+$fourth-color: #ff9933;
+.result {
+  color: #131415;
+  width: 100%;
+  position: relative;
+  &_fixed {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    min-height: 40px;
+  }
+  &_swiper {
+    padding: 24px;
+    box-sizing: border-box;
+    height: max-content;
+  }
+  &_height {
+    height: calc(100vh - 314px);
+  }
+  &_header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #131415;
+    position: relative;
+    &_icon {
+      width: 140px;
+      height: 140px;
+    }
+    &_bgText {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
+      text-align: center;
+      font-size: 144px;
+      opacity: 0.1;
+      position: absolute;
+      top: 144px;
+      font-weight: bold;
+    }
+    &_desc {
+      color: rgba(19, 20, 21, 0.7);
+      text-align: center;
+      /* 正文/14 */
+      font-size: 14px;
+      line-height: 22px;
+      margin: 8px 16px 0;
+    }
+  }
+  .person_first {
+    background-color: $first-bg;
+    color: $first-color;
+  }
+  .person_second {
+    background-color: $second-bg;
+    color: $second-color;
+  }
+  .person_third {
+    background-color: $third-bg;
+    color: $third-color;
+  }
+  .person_fourth {
+    background-color: $fourth-bg;
+    color: $fourth-color;
+  }
+  .person_name {
+    color: #131415;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  &_main {
+    width: 100%;
+    margin-top: 8px;
+    color: rgba(19, 20, 21, 0.7);
+    :global {
+      .adm-tabs-header {
+        border-bottom: 0;
+      }
+    }
+    &_tabs_first {
+      --active-line-color: #23a46d;
+      --active-title-color: #23a46d;
+      --title-font-size: 16px;
+      --content-padding: 16px;
+    }
+    &_tabs_second {
+      --active-line-color: #663399;
+      --active-title-color: #663399;
+      --title-font-size: 16px;
+      --content-padding: 16px;
+    }
+    &_tabs_third {
+      --active-line-color: #36a9ff;
+      --active-title-color: #36a9ff;
+      --title-font-size: 16px;
+      --content-padding: 16px;
+    }
+    &_tabs_fourth {
+      --active-line-color: #ff9933;
+      --active-title-color: #ff9933;
+      --title-font-size: 16px;
+      --content-padding: 16px;
+    }
+  }
+}

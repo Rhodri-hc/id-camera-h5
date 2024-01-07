@@ -1,0 +1,57 @@
+.questionCenter {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #131415;
+  margin-top: -100px;
+  &_header {
+    transform: translateY(50%);
+    width: 176px;
+  }
+  &_main {
+    width: 100%;
+    min-height: 412px;
+    background-size: 100% 412px; //将宽度与高度均设为百分百，显然你自己也可以根据情况设置width还是height。
+    background-attachment: scroll;
+    padding: 86px 16px 0 16px;
+    box-sizing: border-box;
+    height: max-content;
+    background-repeat: no-repeat;
+    background-image: url('https://sunny.tos-cn-guangzhou.volces.com/res/pic/img_answer_card.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_top {
+      width: 142px;
+      margin-bottom: 14px;
+    }
+    &_center {
+      width: 295px;
+      margin-bottom: 24px;
+    }
+    .btnGroup {
+      width: 100%;
+      --gap-vertical: 24px;
+      .continueBtn {
+        width: 134px;
+        height: 40px;
+        --border-radius: 24px;
+        color: #e03a3e;
+        --background-color: #fff;
+        font-size: 16px;
+        border: 1px solid #e03a3e;
+      }
+      .prevBtn {
+        width: 90px;
+        height: 32px;
+        --border-radius: 24px;
+        color: rgba(19, 20, 21, 0.5);
+        --background-color: #f5f5f5;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #131415;
+      }
+    }
+  }
+}

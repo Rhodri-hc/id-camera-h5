@@ -1,0 +1,41 @@
+.type {
+  --adm-color-primary: #ff7ea4;
+  &_header {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    &_left {
+      position: absolute;
+      left: 16px;
+    }
+  }
+
+  &_list {
+    padding: 6px 24px;
+    &_item {
+      padding: 0 24px;
+      border: 1px solid #ff7ea4;
+      border-radius: 12px;
+      height: 48px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    &_copy {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    &_require {
+      padding-right: 2px;
+      font-size: 12px;
+      color: #de4849;
+    }
+  }
+}

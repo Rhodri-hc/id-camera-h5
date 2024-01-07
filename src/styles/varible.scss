@@ -1,0 +1,22 @@
+@import 'theme.scss';
+:root {
+  --page-bg: #fff;
+  --page-color: rgba(0, 0, 0, 0.9);
+  --primary-color: #ff9737;
+}
+@for $i from 1 through 10 {
+  .color-#{$i} {
+    color: map-get($text-map, $i);
+  }
+}
+@for $i from 12 through 36 {
+  @if $i % 2 == 0 {
+    .text-#{$i} {
+      font-size: $i + px;
+      line-height: $i * 1.5 + px;
+    }
+  }
+}
+.color-primary {
+  color: $primary-color;
+}

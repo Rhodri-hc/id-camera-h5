@@ -1,0 +1,28 @@
+// scss 常量
+// 文本颜色
+$text1: rgba(0, 0, 0, 0.9);
+$text2: rgba(0, 0, 0, 0.82);
+$text3: rgba(0, 0, 0, 0.72);
+$text4: rgba(0, 0, 0, 0.65);
+$text5: rgba(0, 0, 0, 0.5);
+$text6: rgba(0, 0, 0, 0.36);
+$text7: rgba(0, 0, 0, 0.24);
+$text8: rgba(0, 0, 0, 0.12);
+$text9: rgba(0, 0, 0, 0.08);
+$text10: rgba(0, 0, 0, 0.04);
+$text-map: (
+  1: $text1,
+  2: $text2,
+  3: $text3,
+  4: $text4,
+  5: $text5,
+  6: $text6,
+  7: $text7,
+  8: $text8,
+  9: $text9,
+  10: $text10,
+);
+$white: #fff;
+$primary-color: #ff9737;
+$btn-primary-bg-color: #ff9737;
+$page-bg: #fff;

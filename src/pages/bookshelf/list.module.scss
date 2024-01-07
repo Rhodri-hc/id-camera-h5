@@ -1,0 +1,85 @@
+@import '../../styles';
+.list {
+  min-height: 450px;
+  padding-top: 68px;
+  &_title {
+    position: fixed;
+    top: 0;
+    background: $white;
+    padding: 16px;
+    font-weight: bold;
+    width: 100%;
+  }
+  &_books {
+    padding: 0 20px 24px 20px;
+    height: calc(100vh - 54px);
+    overflow-y: scroll;
+    &_item {
+      width: calc((100% - 32px) / 3);
+      margin-right: 16px;
+      display: inline-block;
+      position: relative;
+      margin-top: 8px;
+      transition: transform 0.5s ease;
+      //&_showActive{
+      //  animation: circle 0.5s  linear infinite;
+      //}
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+      &:nth-of-type(3) ~ li {
+        margin-top: 24px;
+      }
+      &_img {
+        width: 96px;
+        height: 128px;
+        border-radius: 6px;
+      }
+      &_tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $primary-color;
+        color: $white;
+        font-size: 12px;
+        height: 14px;
+        line-height: 14px;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 4px;
+        display: inline-block;
+        padding: 4px 8px;
+      }
+      &_close {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+      }
+    }
+    &_add {
+      background: $btn-primary-bg-color;
+      width: 100%;
+      margin: 24px 0 14px 0;
+      height: 45px;
+      line-height: 45px;
+      color: $white;
+      border-radius: 12px;
+      text-align: center;
+    }
+  }
+  &_empty {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 42px;
+    box-sizing: border-box;
+    text-align: center;
+    &_img {
+      background-image: url('https://sunny.tos-cn-guangzhou.volces.com/res/pic/bookshelf_bg.png');
+      height: 267px;
+      width: 276px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

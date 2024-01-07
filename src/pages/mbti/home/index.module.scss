@@ -1,0 +1,25 @@
+@import '../../../styles';
+
+.mbti_home {
+  width: 100vw;
+  background-image: url('https://sunny.tos-cn-guangzhou.volces.com/res/pic/mbti_home_bg.png');
+  background-size: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 24px 15px 96px 22px;
+  background-repeat: no-repeat;
+  background-color: #ffedad;
+  &_content {
+    width: 100%;
+  }
+  &_btn {
+    width: calc(100% - 46px);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('https://sunny.tos-cn-guangzhou.volces.com/res/pic/btn_mbti.png');
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    animation: breath 1.5s linear infinite;
+  }
+}

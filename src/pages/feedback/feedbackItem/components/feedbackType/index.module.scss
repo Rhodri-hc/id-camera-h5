@@ -1,0 +1,50 @@
+.feedback {
+  --adm-color-primary: #ff7ea4;
+  padding: 14px 16px 60px;
+  &_title {
+    display: flex;
+    align-items: center;
+
+    &_require {
+      padding-top: 5px;
+      padding-right: 2px;
+      font-weight: 600;
+      color: #de4849;
+    }
+
+    &_label {
+      font-weight: 600;
+    }
+  }
+
+  &_content {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #efefef;
+
+    &_input {
+      --font-size: 14px;
+    }
+
+    &_radio {
+      --icon-size: 16px;
+      --font-size: 14px;
+      --gap: 6px;
+    }
+
+    &_button {
+      --border-radius: 6px;
+
+      margin-top: 16px;
+    }
+
+    &_tip {
+      margin-top: -5px;
+      font-size: 12px;
+      color: #cccccc;
+      margin-bottom: 5px;
+    }
+  }
+}

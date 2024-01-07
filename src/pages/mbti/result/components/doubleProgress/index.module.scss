@@ -1,0 +1,44 @@
+.double_progress {
+  width: 100%;
+  &_line {
+    background-color: #e8e8e8;
+    border-radius: 12px;
+    height: 24px;
+    display: flex;
+    font-size: 12px;
+    &_left {
+      text-align: left;
+      color: #fff;
+      display: inline-block;
+      height: 100%;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      min-width: max-content;
+      line-height: 24px;
+    }
+    &_driver {
+      height: 100%;
+      width: 1px;
+      transform: scale(0.5);
+      background-color: rgba(204, 204, 204, 0.5);
+    }
+    &_right {
+      text-align: right;
+      color: #fff;
+      display: inline-block;
+      height: 100%;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      min-width: max-content;
+      line-height: 24px;
+    }
+  }
+  &_text {
+    margin-top: 4px;
+    color: rgba(19, 20, 21, 0.5);
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

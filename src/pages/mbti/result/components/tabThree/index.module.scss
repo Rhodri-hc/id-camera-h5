@@ -1,0 +1,23 @@
+.tabThree {
+  color: #131415;
+  &_desc {
+    margin-top: 8px;
+    line-height: 22px;
+    font-size: 14px;
+    color: rgba(19, 20, 21, 0.7);
+    > h2:first-child {
+      display: none;
+    }
+    > ul {
+      padding: 0 16px;
+      > li {
+        list-style-type: disc;
+      }
+    }
+  }
+  &_image {
+    width: 104px;
+    flex-shrink: 0;
+    height: 138px;
+  }
+}

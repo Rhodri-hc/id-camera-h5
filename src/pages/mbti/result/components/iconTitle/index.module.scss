@@ -1,0 +1,22 @@
+.icon_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &_first {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #23a46d;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+  &_second {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #23a46d;
+    transform: rotate(45deg);
+    margin-left: -4px;
+    margin-right: 6px;
+  }
+}
