@@ -1,10 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:58:36
- * @LastEditTime: 2023-04-12 11:12:57
- */
-
 declare module '*.css';
 declare module '*.less';
 declare module '*.scss';

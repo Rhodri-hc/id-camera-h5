@@ -1,10 +1,3 @@
-<!--
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:01:03
- * @LastEditTime: 2023-04-12 11:16:33
--->
-
 # dn-promotion-h5
 
 ## 访问

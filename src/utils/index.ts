@@ -1,9 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:01:04
- * @LastEditTime: 2023-04-11 16:38:35
- */
 /**
  * type: String、Number、Boolean、Null、Undefined、Array、Object、Map、Set、Function、Date、Promise、Error、FormData
  * useage: isType('Number')(1) // true

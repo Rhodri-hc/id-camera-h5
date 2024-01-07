@@ -1,13 +1,9 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:01:04
- * @LastEditTime: 2023-04-12 15:30:10
- */
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import cameraRouter from '@/routes/cameraRouter';
+import idPhotoRouter from '@/routes/idPhotoRouter';
 import mbtlRouter from '@/routes/mbtlRouter';
+
 const NotFound = lazy(() => import('@/pages/not-found'));
 const Landing = lazy(() => import('@/pages/landing'));
 const LandingNew = lazy(() => import('@/pages/landingNew'));
@@ -25,7 +21,7 @@ const CameraReport = lazy(() => import('@/pages/cameraReport'));
 const SkitAgreement = lazy(() => import('@/pages/skitAgreement'));
 
 // 业务路由
-const basename = '/h5/sunny-novel';
+const basename = '/h5';
 
 const router = createBrowserRouter(
   [
@@ -94,6 +90,7 @@ const router = createBrowserRouter(
     },
     ...cameraRouter,
     ...mbtlRouter,
+    ...idPhotoRouter,
   ],
   {
     basename,

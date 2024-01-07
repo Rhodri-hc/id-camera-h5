@@ -1,9 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:01:03
- * @LastEditTime: 2023-04-11 16:43:52
- */
 const urlPaths = {
   dev: 'https://sunny-test.careduka.com', // 开发环境
   test: 'https://sunny-test.careduka.com', // 测试环境

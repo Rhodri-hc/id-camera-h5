@@ -1,9 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:58:08
- * @LastEditTime: 2023-04-24 17:53:49
- */
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -15,7 +9,7 @@ export default defineConfig(({ command, mode, ...other }) => {
   const isProd = mode === 'production'; // build 独有配置
 
   return {
-    base: 'h5/sunny-novel',
+    base: 'h5',
     resolve: {
       alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
     },

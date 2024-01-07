@@ -1,9 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:31:40
- * @LastEditTime: 2023-04-11 16:32:27
- */
 import { useCallback, useEffect, useRef } from 'react';
 
 export function useLatest<T>(value: T) {

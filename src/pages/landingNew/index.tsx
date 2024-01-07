@@ -1,9 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 17:53:53
- * @LastEditTime: 2023-04-12 14:36:59
- */
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
 import apis from '@/apis';

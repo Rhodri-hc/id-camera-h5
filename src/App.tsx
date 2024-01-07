@@ -1,9 +1,3 @@
-/*
- * @Description: Do not edit
- * @Autor: New
- * @Date: 2023-04-11 16:58:36
- * @LastEditTime: 2023-04-24 18:03:07
- */
 import { FC, useEffect } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import router from '@/routes';
